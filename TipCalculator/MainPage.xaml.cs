@@ -59,6 +59,11 @@ namespace TipCalculator
 
         private void BillAmountTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
+            if (BillAmountTextBox.Text == "")
+            {
+                BillAmountTextBox.Text = "₹ 0.00";
+                return;
+            }
             BillAmountTextBox.Text = tip.BillAmount;
         }
 
@@ -70,7 +75,9 @@ namespace TipCalculator
         {
             var selectedRadioButton = MyStackPanel.Children.OfType<RadioButton>().FirstOrDefault(r => r.IsChecked == true);
 
-            tip.calculateTip(BillAmountTextBox.Text, double.Parse(selectedRadioButton.Tag.ToString()));
+            string billAmount = BillAmountTextBox.Text.Replace("₹", " ");
+            tip.calculateTip(billAmount, double.Parse(selectedRadioButton.Tag.ToString()));
+            //tip.calculateTip(BillAmountTextBox.Text, double.Parse(selectedRadioButton.Tag.ToString()));
 
             TipAmountTextBox.Text = tip.TipAmount;
             TotalAmountTextBox.Text = tip.TotalAmount;

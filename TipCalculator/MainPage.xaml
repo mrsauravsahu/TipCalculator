@@ -29,7 +29,7 @@
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
             <TextBox Name="BillAmountTextBox"
-                     Text="0.00"
+                     Text="₹ 0.00"
                      TextAlignment="Right"
                      Margin="10, 5, 10, 5"
                      InputScope="Number"
@@ -62,7 +62,7 @@
             <TextBlock Text="TIP AMOUNT"
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
-            <TextBlock Text="0.00"
+            <TextBlock Text="₹ 0.00"
                        Name="TipAmountTextBox"
                        Style="{StaticResource HeaderTextBlockStyle}"
                        Margin="10, 0, 10, 5"
@@ -70,7 +70,7 @@
             <TextBlock Text="TOTAL AMOUNT"
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
-            <TextBlock Text="0.00"
+            <TextBlock Text="₹ 0.00"
                        Name="TotalAmountTextBox"
                        Style="{StaticResource HeaderTextBlockStyle}"
                        Margin="10, 0, 10, 5"/>
