@@ -27,9 +27,9 @@ namespace TipCalculator
                 tipAmount = billAmount * tipPercentage;
                 totalAmount = tipAmount + billAmount;
             }
-            this.BillAmount = String.Format("{0:C}", billAmount.ToString()).Replace('$', ' ');
-            this.TipAmount = String.Format("{0:C}", tipAmount.ToString()).Replace('$', ' ');
-            this.TotalAmount = String.Format("{0:C}", totalAmount.ToString()).Replace('$', ' ');
+            this.BillAmount = String.Format("{0:C}", billAmount.ToString());
+            this.TipAmount = String.Format("{0:C}", tipAmount.ToString());
+            this.TotalAmount = String.Format("{0:C}", totalAmount.ToString());
         }
     }
 }
