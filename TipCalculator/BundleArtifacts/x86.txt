@@ -1,0 +1,2 @@
+MainPackage=C:\Users\saurav\Source\Repos\TipCalculator\TipCalculator\bin\x86\Release\TipCalculator_1.0.0.0_x86.appx
+SymbolPackage=C:\Users\saurav\Source\Repos\TipCalculator\TipCalculator\AppPackages\TipCalculator_1.0.0.0_Test\TipCalculator_1.0.0.0_x86.appxsym

@@ -5,30 +5,30 @@
     xmlns:local="using:TipCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource PhoneAccentBrush}">
+    mc:Ignorable="d">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        
-        <TextBlock Text="TIP CALCULATOR"
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="TIP CALCULATOR"
                    Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                    Margin="10, 5, 10, 5"/>
-        <TextBlock Text="enter the bill amount"
+            <TextBlock Text="enter the bill amount"
                    Style="{StaticResource HeaderTextBlockStyle}"
                    Grid.Row="1"
                    FontSize="42"
                    Margin="10, 0, 10, 5"/>
-        <StackPanel Grid.Row="2"
+            <StackPanel Grid.Row="2"
                     Name="MyStackPanel">
-            <TextBlock Text="BILL AMOUNT"
+                <TextBlock Text="BILL AMOUNT"
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
-            <TextBox Name="BillAmountTextBox"
+                <TextBox Name="BillAmountTextBox"
                      Text="₹ 0.00"
                      TextAlignment="Right"
                      Margin="10, 5, 10, 5"
@@ -36,44 +36,45 @@
                      GotFocus="BillAmountTextBox_GotFocus"
                      LostFocus="BillAmountTextBox_LostFocus"
                      TextChanged="BillAmountTextBox_TextChanged"/>
-            <TextBlock Text="TIP PERCENTAGE"
+                <TextBlock Text="TIP PERCENTAGE"
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
-            <RadioButton Content="5% - Horrible Service"
+                <RadioButton Content="5% - Horrible Service"
                          Style="{StaticResource PivotTitleContentControlStyle}"
                          GroupName="RadioButtonGroup"
                          Margin="10, 5, 10, 5"
                          Tag="0.05"
                          Click="RadioButton_Click"/>
-            <RadioButton Content="7% - Good Service"
+                <RadioButton Content="7% - Good Service"
                          Style="{StaticResource PivotTitleContentControlStyle}"
                          GroupName="RadioButtonGroup"
                          Margin="10, 5, 10, 5"
                          Tag="0.07"
                          Click="RadioButton_Click"
                          IsChecked="True"/>
-            <RadioButton Content="9% - Excellent Service"
+                <RadioButton Content="9% - Excellent Service"
                          Style="{StaticResource PivotTitleContentControlStyle}"
                          GroupName="RadioButtonGroup"
                          Margin="10, 5, 10, 5"
                          Tag="0.09"
                          Click="RadioButton_Click"/>
 
-            <TextBlock Text="TIP AMOUNT"
+                <TextBlock Text="TIP AMOUNT"
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
-            <TextBlock Text="₹ 0.00"
+                <TextBlock Text="₹ 0.00"
                        Name="TipAmountTextBox"
                        Style="{StaticResource HeaderTextBlockStyle}"
                        Margin="10, 0, 10, 5"
                        />
-            <TextBlock Text="TOTAL AMOUNT"
+                <TextBlock Text="TOTAL AMOUNT"
                        Style="{StaticResource FlyoutPickerTitleTextBlockStyle}"
                        Margin="10, 5, 10, 5"/>
-            <TextBlock Text="₹ 0.00"
+                <TextBlock Text="₹ 0.00"
                        Name="TotalAmountTextBox"
                        Style="{StaticResource HeaderTextBlockStyle}"
                        Margin="10, 0, 10, 5"/>
-        </StackPanel>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
